@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1>Gestion des notes de frais</h1>
 
-## Getting Started
+## Aperçu
+Ce projet consiste à développer une application de gestion des notes de frais, dans laquelle l’employé peut créer et soumettre ses dépenses tandis que le manager peut les approuver, les rejeter ou les payer. L’application facilite et automatise entièrement le processus de traitement des notes de frais, afin d’améliorer le suivi et la gestion financière au sein de l’entreprise.
 
-First, run the development server:
-
+## Technologies utilisées
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS / Shadcn UI
+- react-icons
+  
+## Structure du projet
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+app/
+ ├── api/
+ │    ├── auth/
+ │    └── notes/
+ │
+ ├── expenses/
+ │
+ ├── login/
+ │
+ ├── manager/
+ │
+ └── seed/
+      ├── expenses.json
+      └── users.json
+ │
+ ├── globals.css
+ └── layout.tsx
+ └── page.tsx
+
+components/
+ └── ui/
+lib/
+public/
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Scripts disponibles
+```bash
+- `npm install` : installation des dépendances
+- `npm run dev` : lance l’application en mode développement
+- `npm run build` : build du projet
+- `npm run start` : démarre la version buildée
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## commencer
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Clonez d’abord le dépôt GitHub :
+```bash
+# Avec HTTPS
+git clone https://github.com/aalaliayoub/v1.0depot.git
 
-## Learn More
+# Avec SSH
+git clone git@github.com:aalaliayoub/v1.0depot.git
 
-To learn more about Next.js, take a look at the following resources:
+# Avec GitHub CLI
+gh repo clone aalaliayoub/v1.0depot
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+Ensuite, lancez l’application : 
+```bash
+npm run dev
+# ou
+yarn dev
+# ou
+pnpm dev
+# ou
+bun dev
+```
+Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour afficher l’application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Fonctionnalités
+#### Authentification
+ - Connexion à l’application via une adresse e-mail et un mot de passe.
+### Employé
+- Créer une note de frais
+- Modifier une note
+- Soumettre une note
+- Filtrer et paginer la liste
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Manager
+- Voir toutes les dépenses
+- Approuver ou rejeter
+- Marquer comme payée
+- Exporter les dépenses en CSV
