@@ -1,0 +1,14 @@
+[
+    {
+        "id":1,
+        "email":"ayoubaalali404@gmail.com",
+        "password":"Aa121212",
+        "role":"employee"
+    },
+    {
+        "id":2,
+        "email":"manager@gmail.com",
+        "password":"Aa121212",
+        "role":"manager"
+    }
+]
