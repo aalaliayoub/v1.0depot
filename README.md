@@ -85,3 +85,13 @@ Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour
 - Approuver ou rejeter
 - Marquer comme payée
 - Exporter les dépenses en CSV
+
+### Interface utilisateur 
+- page login
+<img width="959" height="446" alt="image" src="https://github.com/user-attachments/assets/30b25eaa-b1f5-4993-8084-22d97d32a7b3" />
+- employee page
+  <img width="958" height="451" alt="image" src="https://github.com/user-attachments/assets/ef2c86cc-7f40-48c3-8e14-0e57d1150b4d" />
+- manager page
+  <img width="956" height="447" alt="image" src="https://github.com/user-attachments/assets/ee735cd9-c4e0-4218-a0df-cfaa754a24a6" />
+
+
